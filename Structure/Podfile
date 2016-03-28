@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+target 'Structure' do
+
+pod 'AFNetworking', '~> 2.5.4'
+pod 'SDWebImage', '~> 3.7.5'
+pod 'JTObjectMapping', '~> 1.1.2'
+pod 'XTSafeCollection', '~> 1.0.3'
+pod 'Masonry', '~> 0.6.4'
+
+end
