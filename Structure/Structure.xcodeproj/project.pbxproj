@@ -19,6 +19,8 @@
 		C6CB74051CA9108600B36878 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB74021CA9108600B36878 /* UIButton+Badge.m */; };
 		C6CB74081CA910A800B36878 /* ChatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB74071CA910A800B36878 /* ChatsModel.m */; };
 		C6CB740B1CA910BD00B36878 /* ChatsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB740A1CA910BD00B36878 /* ChatsEntity.m */; };
+		C6CB74191CA9130000B36878 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB74171CA9130000B36878 /* WebService.m */; };
+		C6CB741C1CA9159600B36878 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB741B1CA9159600B36878 /* NSDictionary+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		C6CB740F1CA9111700B36878 /* UserDefaultAndNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultAndNotification.h; sourceTree = "<group>"; };
 		C6CB74101CA9113000B36878 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		C6CB74111CA9119400B36878 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C6CB74161CA9130000B36878 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		C6CB74171CA9130000B36878 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		C6CB741A1CA9159600B36878 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		C6CB741B1CA9159600B36878 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		E2F9AE163AB112E8B75A35F7 /* Pods-Structure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Structure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Structure/Pods-Structure.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +103,7 @@
 				C6CB73EE1CA8DA8700B36878 /* Macros */,
 				C6CB73E61CA8DA0600B36878 /* MVCs */,
 				C6CB73EF1CA8DA8700B36878 /* Utilities */,
+				C6CB74121CA912D600B36878 /* Base */,
 				C6CB73ED1CA8DA8700B36878 /* External */,
 				C6CB73E91CA8DA0600B36878 /* Resources */,
 				C6CB73D21CA8D49F00B36878 /* AppDelegate.h */,
@@ -251,6 +258,25 @@
 			path = MIBadgeButton;
 			sourceTree = "<group>";
 		};
+		C6CB74121CA912D600B36878 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB74131CA9130000B36878 /* Services */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C6CB74131CA9130000B36878 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB741A1CA9159600B36878 /* NSDictionary+Utils.h */,
+				C6CB741B1CA9159600B36878 /* NSDictionary+Utils.m */,
+				C6CB74161CA9130000B36878 /* WebService.h */,
+				C6CB74171CA9130000B36878 /* WebService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F0764B2EBB1167EAC6EB356F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CB741C1CA9159600B36878 /* NSDictionary+Utils.m in Sources */,
 				C6CB740B1CA910BD00B36878 /* ChatsEntity.m in Sources */,
 				C6CB73F91CA9102600B36878 /* ViewController.m in Sources */,
+				C6CB74191CA9130000B36878 /* WebService.m in Sources */,
 				C6CB74051CA9108600B36878 /* UIButton+Badge.m in Sources */,
 				C6CB74081CA910A800B36878 /* ChatsModel.m in Sources */,
 				C6CB73D41CA8D49F00B36878 /* AppDelegate.m in Sources */,
@@ -503,6 +531,8 @@
 			baseConfigurationReference = B732282DFCC759FE1DD7F747 /* Pods-Structure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Structure/PrefixHeader.pch;
 				INFOPLIST_FILE = Structure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthur.Structure;
@@ -515,6 +545,8 @@
 			baseConfigurationReference = E2F9AE163AB112E8B75A35F7 /* Pods-Structure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Structure/PrefixHeader.pch;
 				INFOPLIST_FILE = Structure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthur.Structure;

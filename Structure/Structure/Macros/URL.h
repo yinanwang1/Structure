@@ -10,4 +10,7 @@
 #define URL_h
 
 
+#define SERVER_URL  @"http://www.baidu.com"
+
+
 #endif /* URL_h */
