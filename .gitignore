@@ -1,0 +1,9 @@
+*/.DS_Structure
+.DS_Structure
+
+Structure/Structure.xcodeproj/xcuserdata/*
+Structure/Structure.xcodeproj/project.xcworkspace/xcuserdata/*
+Structure/Structure.xcodeproj/project.xcworkspace/xcshareddata/*
+Structure/Structure.xcworkspace/xcuserdata/*
+Structure/Structure.xcworkspace/xcshareddata/*
+Structure/Pods/Pods.xcodeproj/xcuserdata/*
