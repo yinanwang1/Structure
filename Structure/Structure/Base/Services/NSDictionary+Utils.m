@@ -1,10 +1,4 @@
-//
-//  NSDictionary+Utils.m
-//  StudentInfo
-//
-//  Created by Sai Chow on 2/12/14.
-//  Copyright (c) 2014 Netchemia. All rights reserved.
-//
+
 
 #import "NSDictionary+Utils.h"
 

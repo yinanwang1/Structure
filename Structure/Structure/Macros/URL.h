@@ -12,5 +12,7 @@
 
 #define SERVER_URL  @"http://www.baidu.com"
 
+#define URL_TEST @"test"
+
 
 #endif /* URL_h */

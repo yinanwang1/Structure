@@ -10,4 +10,17 @@
 
 @implementation ChatsEntity
 
++ (instancetype)createChatsEntityWithDic:(NSDictionary *)dic
+{
+    NSDictionary *mapping = @{
+                              @"name": @"nameStr",
+                              @"age":@"ageIntNum",
+                              };
+    
+    ChatsEntity *entity = [ChatsEntity objectFromJSONObject:dic
+                                                    mapping:mapping];
+    
+    return entity;
+}
+
 @end

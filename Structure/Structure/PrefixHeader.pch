@@ -15,4 +15,8 @@
 #import "UserDefaultAndNotification.h"
 #import "Utilities.h"
 
+
+#import "WebService.h"
+#import "NSObject+JTObjectMapping.h"
+
 #endif /* PrefixHeader_pch */

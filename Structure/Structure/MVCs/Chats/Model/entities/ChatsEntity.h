@@ -10,4 +10,9 @@
 
 @interface ChatsEntity : NSObject
 
+@property (nonatomic, strong) NSString *nameStr;
+@property (nonatomic, strong) NSNumber *ageIntNum;
+
++ (instancetype)createChatsEntityWithDic:(NSDictionary *)dic;
+
 @end
